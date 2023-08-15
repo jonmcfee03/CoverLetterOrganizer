@@ -1,15 +1,12 @@
 import os
 import shutil
-from pathlib import Path
 
-print("Og", os.getcwd())
-
-os.chdir("/mnt/c/Users/Jonmc/Downloads")
+os.chdir('C:\\Users\\Jonmc\\Downloads')
 
 files = os.listdir()
 
-source_dir = "/mnt/c/Users/Jonmc/Downloads"
-destination_dir = "/mnt/c/Users/Jonmc/OneDrive/Documents/Cover Letters"
+source_dir = 'C:\\Users\\Jonmc\\Downloads'
+destination_dir = "C:\\Users\\Jonmc\\OneDrive\\Documents\\Cover Letters"
 
 for file in files:
     if "Cover Letter" in file:
