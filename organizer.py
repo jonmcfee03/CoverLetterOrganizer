@@ -15,6 +15,5 @@ for file in files:
     if "Cover Letter" in file:
         #time since august 1, 2023
         time = os.path.getctime(file) - 1690848000
-        print(time)
         if time > 0:
             shutil.move(os.path.join(source_dir, file), destination_dir)
