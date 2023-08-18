@@ -3,13 +3,12 @@ import os
 import shutil
 
 while True:
-    numFiles = len(os.listdir("C:\Users\Jonmc\Downloads"))
+    os.chdir("C:\\Users\\Jonmc\\Downloads")
+    numFiles = len(os.listdir())
     time.sleep(60)
     oldNumFiles = numFiles
-    numFiles = len(os.listdir("C:\Users\Jonmc\Downloads"))
+    numFiles = len(os.listdir())
     if numFiles != oldNumFiles:
-        os.chdir('C:\\Users\\Jonmc\\Downloads')
-
         files = os.listdir()
 
         source_dir = 'C:\\Users\\Jonmc\\Downloads'
